@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.newGame {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.grey {
+    position: absolute;
+    background-color: rgb(187, 179, 179);
+    opacity: 0.3;
+    width: 50%;
+    height: 100%;
+}   
+
+h1 img {
+    margin-right: 20px;
+    width: 30px;
+}
+
+.containerGame {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.containerPlayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.containerPlayer h2 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player img {
+    margin-left: 20px;
+}
+
+H1 P {
+    opacity: 0.5;
+}
+
+.global {
+    font-size: 6rem;
+    font-weight: 300;
+    color: red;
+}
+
+.current {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    height: 15%;
+    width: 135px;
+    margin-top: 190px;
+}
+
+.current span {
+    color: white;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    width: 20%;
+    height: 68%;
+}
+
+.des {
+    margin-bottom: 80%;
+    z-index: 0;
+}
+
+.des img {
+    box-shadow:  5px 5px 5px 0 grey;
+}
+
+.rollHold {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.rollHold p {
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+.roll {
+    width: 165px;
+    margin-bottom: 30px;
+}
+
+.hold {
+    width: 115px;
+}
+
+.flecheCercle {
+    width: 30px;
+}
+
+.flecheCarre {
+    width: 30px;
+}
+
+
+/* Responsive :*/
+
+@media screen and (max-width: 1440px){
+
+    main {
+        height: 800px;
+    }
+    .des {
+        margin-bottom: 100%;
+    }
+}
+
+@media screen and (max-width: 1366px){
+
+    .des {
+        margin-bottom: 100%;
+        width: 100px;
+        height: 100px;
+    }
+    .containerPlayer h2 {
+        font-size: 3rem;
+    }
+    .current {
+        margin-top: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .des {
+        margin-bottom: 90%;
+    }
+}
+
+@media screen and (max-width: 815px){
+
+    main {
+        height: 700px;
+    }
+    .newGame {
+        width: 30%;
+    }
+    .containerGame {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 685px){
+
+    .containerPlayer h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .newGame {
+        width: 100%;
+        padding-top: 20px;
+    }
+    .containerGame {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .containerPlayer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .containerPlayer h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    
+    .global {
+        font-size: 3rem;
+    }
+    .current {
+        margin-top: 20px;
+        height: auto;
+        width: 100px;
+        padding: 10px;
+    }
+    .current span {
+        font-size: 1.5rem;
+    }
+    .mid {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .des {
+        margin-bottom: 30px;
+    }
+    .rollHold p {
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .roll {
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .hold {
+        width: 80px;
+    }
+}
