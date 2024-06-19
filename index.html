@@ -1,3 +1,4 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,31 +13,35 @@
 </head>
 <body>
     <div class="grey"></div>
-    <h1 class="newGame">
-        <img src="images/iconePlus.png" alt="New Game"/>
+    <h1 class="newGame" onclick="resetGame()">
+        <img src="images/iconePlus.png" alt="symbole plus"/>
         <p>NEW GAME</p>
     </h1>
     <div class="containerGame">
-        <section class="containerPlayer">
-            <h2 class="player">PLAYER 1 <img src="images/rondRouge.png" alt="Rond rouge"/></h2>
+        <section class="containerPlayer player1 active">
+            <h2 class="player">
+                PLAYER 1 <img src="images/rondRouge.png" class="activeIndicateur player1Indicateur" />
+            </h2>
             <div class="global">0</div>
             <div class="current">CURRENT<span>0</span></div>
         </section>
         <section class="mid">
             <div class="des">
-                <img src="images/des1.png">
+                <img src="images/des1.png" id="des0" alt="dés1" class="newdes">
             </div>
-            <div class="rollHold roll">
-                <img class="flecheCercle" src="images/FlechesRotatives.png" alt="Roll dice">
+            <div class="rollHold roll" onclick="rollDice()">
+                <img class="rollImg" src="images/rollImg.png" alt="">
                 <p class="btn">ROLL DICE</p>
             </div>
-            <div class="rollHold hold">
-                <img class="flecheCarre" src="images/FlecheCarre.png" alt="Hold">
+            <div class="rollHold hold" onclick="hold()">
+                <img class="holdImg" src="images/holdImg.png" alt="Hold">
                 <p class="btn">HOLD</p>
             </div>
         </section>
         <section class="containerPlayer player2">
-            <h2 class="player"> PLAYER 2 <img src="images/RondRouge.png"/></h2>
+            <h2 class="player">
+                PLAYER 2 <img src="images/RondRouge.png" class="activeIndicateur player2Indicateur"/>
+            </h2>
             <div class="global">0</div>
             <div class="current">CURRENT<span>0</span></div>
         </section>

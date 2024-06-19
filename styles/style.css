@@ -135,14 +135,21 @@ H1 P {
     width: 115px;
 }
 
-.flecheCercle {
+.rollImg {
     width: 30px;
 }
 
-.flecheCarre {
+.holdImg {
     width: 30px;
 }
 
+.activeIndicateur {
+    display: none;
+}
+
+.containerPlayer.active .activeIndicateur {
+    display: inline;
+}
 
 /* Responsive :*/
 
